@@ -40,7 +40,7 @@
   "scripts": {
     "generate": "tsx scripts/generate.ts",
     "generate:types": "tsx scripts/generate-types.ts",
-    "build": "npm run generate && npm run generate:types && tsup src/index.ts --format cjs,esm --dts",
+    "build": "npm run generate && npm run generate:types && tsup src/index.ts --format cjs,esm --dts --shims",
     "lint": "eslint . && tsc --noEmit",
     "lint:fix": "eslint . --fix",
     "typecheck": "tsc --noEmit",
